@@ -6,7 +6,7 @@ public class BallJump : MonoBehaviour
 {
     private Vector3 origin;
     private float elapsedTime;
-    [SerializeField] private float updateTime = 0.5f;
+    [SerializeField] private float updateTime = 1f;
 
     void Start()
     {
@@ -31,9 +31,9 @@ public class BallJump : MonoBehaviour
     void MoveToRandomPosition()
     {
         origin = new Vector3(
-            Random.Range(-3f, 3f),
+            Random.Range(-8f, 8f),
             transform.position.y,
-            Random.Range(-3f, 3f)
+            Random.Range(-8f, 8f)
         );
     }
 }
